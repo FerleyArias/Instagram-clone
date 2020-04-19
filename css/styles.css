@@ -17,6 +17,14 @@ body{
     text-decoration: none;
 }
 
+.logo{
+    display: flex;
+    align-items: flex-end;
+    height: 36px;
+    width: 220px;
+    margin-left: 10px;
+}
+
 .header ul{
     display: flex;
     flex-direction: row;
@@ -46,8 +54,7 @@ body{
 
 .explorer-input{
     background-color: #FAFAFA;
-    border-color: #DBDBDB;
-    border-style: solid;
+    border: 1px solid #DBDBDB;
     width: 199px;
     height: 12px;
     border-radius: 3px;
@@ -55,7 +62,7 @@ body{
 }
 
 .container{
-    width: 935px;
+    width: 975px;
     margin: 0 auto;
     display: inherit;
     align-items: inherit;
