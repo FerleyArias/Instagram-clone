@@ -1,8 +1,14 @@
 body{
     margin: 0;
+    background-color: #FAFAFA;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
 }
 .header{
+    position: fixed;
+    width: 100%;
     display: flex;
+    background-color: #FFFFFF;
     height: 54px;
     border: 1px solid #DBDBDB;
     border-left: 0;
@@ -11,10 +17,10 @@ body{
     justify-content: space-between; 
     align-items: center;
     margin: 0, 100px;
-
 }
-.header a{
+a{
     text-decoration: none;
+    color: black;
 }
 
 .logo{
@@ -60,6 +66,72 @@ body{
     border-radius: 3px;
     padding: 7px;
 }
+.principal-section{
+    padding-top: 90px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.publication{
+    width: 614px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-bottom: 60px;
+}
+.publication-header{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.publication-header-acount{
+    font-style: bold;
+    font-size: 14px;
+}
+.publication-header-acount img{
+    border-radius: 52px;
+    display: inline;
+    vertical-align: middle;
+}
+.publication-content img, video{
+    width: 100%;
+}
+.publication-footer-icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    margin-top: 4px;
+}
+.publication-footer-icons a{
+    padding: 8px;
+    font-size: 24px; 
+}
+.publication-footer-information a{
+    font-weight: bold;
+}
+.publication-form-comment{
+    border-top: 1px solid #EFEFEF;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    margin-top: 4px;
+}
+
+.publication-form-comment input, button{
+    border: 0;
+    background-color: transparent;
+}
+.publication-form-comment input{
+    width: 100%;
+}
+.publication-form-comment button{
+    color: #C2DBFB;
+    font-weight: bold;
+}
 
 .container{
     width: 975px;
@@ -68,4 +140,3 @@ body{
     align-items: inherit;
     justify-content: inherit;
 }
-
