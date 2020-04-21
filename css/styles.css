@@ -12,14 +12,14 @@ i{
     width: 100%;
     display: flex;
     background-color: #FFFFFF;
-    height: 54px;
+    height: 53px;
     border: 1px solid #DBDBDB;
     border-left: 0;
     border-right: 0;
     border-top: 0;
     justify-content: space-between; 
     align-items: center;
-    margin: 0, 100px;
+
 }
 a{
     text-decoration: none;
@@ -72,16 +72,19 @@ a{
     padding: 7px;
 }
 .principal-section{
-    padding-top: 90px;
     height: 100%;
     width: 100%;
-    position: static;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
-.publication{
+
+.news{
+    margin-top: 83px;
     width: 614px;
+}
+
+.publication{
+    width: auto;
     background-color: #FFFFFF;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
@@ -150,11 +153,10 @@ a{
     font-weight: bold;
 }
 .container-right{
-    position: fixed;
+    position: sticky;
+    top: 85px;
     width: 293px;
-    height: 666px;
-    top: 88px;
-    right: 15%;
+    height: 300px;
     font-weight: bold;
 }
 .profile-information {
@@ -187,6 +189,7 @@ a{
     height: 223px;
     width: auto;
     overflow: hidden;
+    border-radius: 4px;
 }
 .stories-header, .friends-header{
     display: flex;
@@ -241,9 +244,10 @@ a{
     margin: 12px 0;
 }
 .friend{
+    height: 32px;
     display: flex;
     justify-content: space-between;
-    margin: 8px 0;
+    padding: 8px 8px;
 }
 .friend-left{
     display: flex;
@@ -252,6 +256,7 @@ a{
 .friend p{
     margin: 0;
     margin-left: 14px;
+    font-size: 12px;
 }
 .friend a img{
     display: inline;
@@ -267,7 +272,7 @@ a{
 }
 
 .container{
-    width: 975px;
+    width: 935px;
     margin: 0 auto;
     display: inherit;
     align-items: inherit;
@@ -276,6 +281,7 @@ a{
 .footer, .footer a{
     font-weight: 100;
     font-size: 11px;
+    line-height: 20px;
 }
 
 .footer{
