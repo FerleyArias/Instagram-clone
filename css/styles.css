@@ -21,6 +21,7 @@ body{
 a{
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
 
 .logo{
@@ -70,6 +71,7 @@ a{
     padding-top: 90px;
     height: 100%;
     width: 100%;
+    position: static;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,6 +101,7 @@ a{
 .publication-content img, video{
     width: 100%;
 }
+
 .publication-footer-icons{
     display: flex;
     justify-content: space-between;
@@ -109,9 +112,7 @@ a{
     padding: 8px;
     font-size: 24px; 
 }
-.publication-footer-information a{
-    font-weight: bold;
-}
+
 .publication-form-comment{
     border-top: 1px solid #EFEFEF;
     height: 56px;
@@ -132,6 +133,121 @@ a{
     color: #C2DBFB;
     font-weight: bold;
 }
+.container-right{
+    position: fixed;
+    width: 293px;
+    height: 666px;
+    top: 88px;
+    right: 15%;
+    font-weight: bold;
+}
+.profile-information {
+    display: flex;
+    width: auto;
+    height: 50px;
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.profile-information img{
+    display: inline;
+    vertical-align: middle;
+    border-radius: 52px;
+    width: 50px; 
+    height: 50px;
+}
+.profile-information p{
+    font-size: 12px;
+    font-weight: 100;
+    margin-left: 14px;
+}
+.profile-information a{
+    font-size: 14px;
+}
+
+.stories,.friends{
+    border: 1px solid #DBDBDB;
+    height: 223px;
+    width: auto;
+    overflow: hidden;
+}
+.stories-header, .friends-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 19px;
+    padding: 4px 16px;
+    margin-top: 12px;
+}
+.stories-header p, .friends-header p{
+    color: #8E8E8E;
+    font-weight: bold;
+    font-size: 14px;
+}
+.stories-header a, .friends-header a{
+    font-size: 12px;
+}
+
+.stories-content, .friends-content{
+    margin-left: 14px;
+    overflow: auto;
+    height: 182px;
+    margin-top: 8px;
+}
+.stories-content a{
+    display: flex;
+    height: 52px;
+    width: 100%;
+}
+.stories-content img{
+    display: inline;
+    vertical-align: middle;
+    border-radius: 52px;
+    width: 34px;
+    height: 34px;
+}
+.stories-content p, .friend p{
+    margin: 0;
+    font-weight: 100;
+    color: black;
+    margin-left: 14px;
+    font-size: 10px;
+}
+.stories-content strong, .friend a{
+    font-size: 14px;
+    
+}
+
+.friends{
+    height: 197px;
+    width: 100%;
+    margin: 12px 0;
+}
+.friend{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+.friend-left{
+    display: flex;
+    align-items: center;
+}
+.friend p{
+    margin: 0;
+    margin-left: 14px;
+}
+.friend a img{
+    display: inline;
+    vertical-align: middle;
+    border-radius: 52px;
+    width: 32px;
+    height: 32px;
+}
+
+.friend button{
+    color: #0095F6;
+    font-weight: bold;
+}
 
 .container{
     width: 975px;
@@ -139,4 +255,12 @@ a{
     display: inherit;
     align-items: inherit;
     justify-content: inherit;
+}
+.footer, .footer a{
+    font-weight: 100;
+    font-size: 11px;
+}
+
+.footer{
+    padding-right: 70px;
 }
