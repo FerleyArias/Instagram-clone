@@ -180,6 +180,7 @@ a{
 
 .stories,.friends{
     border: 1px solid #DBDBDB;
+    background-color: #FFF;
     height: 223px;
     width: auto;
     overflow: hidden;
