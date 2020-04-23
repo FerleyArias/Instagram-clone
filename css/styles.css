@@ -1,11 +1,37 @@
-body{
+*  {
     margin: 0;
+    padding: 0;
+}
+body{
     background-color: #FAFAFA;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
 }
 i{
     color:black
+}
+input[type='text'] {
+    outline: none;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.text-gray {
+    color: #8E8E8E;
+}
+.m-vertical-sm {
+    margin: 8px 0;
+}
+.circular {
+    border-radius: 50%;
+}
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
 }
 .header{
     position: fixed;
@@ -19,28 +45,13 @@ i{
     border-top: 0;
     justify-content: space-between; 
     align-items: center;
-
+    z-index: 1;
 }
-a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.logo{
-    display: flex;
-    align-items: flex-end;
-    height: 36px;
-    width: 220px;
-    margin-left: 10px;
-}
-
 .header ul{
     display: flex;
     flex-direction: row;
     width: 198px;
     justify-content: space-between;
-
 }
 .header ul li{
     display: inherit;
@@ -58,9 +69,12 @@ a{
     justify-content: inherit;
     font-size: 22px;
 }
-
-#img-profile{
-    border-radius: 50px;
+.logo{
+    display: flex;
+    align-items: flex-end;
+    height: 36px;
+    width: 220px;
+    margin-left: 10px;
 }
 
 .explorer-input{
@@ -77,17 +91,11 @@ a{
     display: flex;
     justify-content: space-between;
 }
-
 .news{
     margin-top: 83px;
     width: 614px;
 }
-
 .publication{
-    width: auto;
-    background-color: #FFFFFF;
-    border: 1px solid #DBDBDB;
-    border-radius: 3px;
     margin-bottom: 60px;
 }
 .publication-header{
@@ -100,15 +108,18 @@ a{
     font-size: 16px;
 }
 .publication-header-acount{
-    font-style: bold;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
 }
+
+.publication-header-name {
+    margin-left: 10px;
+}
+
 .publication-header-acount img{
     border-radius: 52px;
     width: 32px;
     height: 32px;
-    display: inline;
-    vertical-align: middle;
 }
 .publication-content img, video{
     width: 100%;
@@ -168,9 +179,6 @@ a{
 }
 
 .profile-information img{
-    display: inline;
-    vertical-align: middle;
-    border-radius: 52px;
     width: 50px; 
     height: 50px;
 }
@@ -183,26 +191,17 @@ a{
     font-size: 14px;
 }
 
-.stories,.friends{
-    border: 1px solid #DBDBDB;
-    background-color: #FFF;
+.stories {
     height: 223px;
-    width: auto;
     overflow: hidden;
-    border-radius: 4px;
 }
+
 .stories-header, .friends-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 19px;
     padding: 4px 16px;
     margin-top: 12px;
-}
-.stories-header p, .friends-header p{
-    color: #8E8E8E;
-    font-weight: bold;
-    font-size: 14px;
 }
 .stories-header a, .friends-header a{
     font-size: 12px;
@@ -220,9 +219,6 @@ a{
     width: 100%;
 }
 .stories-content img{
-    display: inline;
-    vertical-align: middle;
-    border-radius: 52px;
     width: 34px;
     height: 34px;
 }
@@ -235,12 +231,10 @@ a{
 }
 .stories-content strong, .friend a{
     font-size: 14px;
-    
 }
 
 .friends{
     height: 197px;
-    width: 100%;
     margin: 12px 0;
 }
 .friend{
@@ -259,9 +253,6 @@ a{
     font-size: 12px;
 }
 .friend a img{
-    display: inline;
-    vertical-align: middle;
-    border-radius: 52px;
     width: 32px;
     height: 32px;
 }
