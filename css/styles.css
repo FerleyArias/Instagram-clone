@@ -1,26 +1,37 @@
+:root{
+    --color-white: #FFF;
+    --color-gray: #DBDBDB;
+    --color-graylight: #FAFAFA;
+    --color-graytext: #8E8E8E;
+    --color-bluelight: #0095F6;
+    --color-celest: #C2DBFB;
+    --color-black: #000;
+}
 *  {
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: #FAFAFA;
+    background-color: var(--color-graylight);
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
 }
 i{
-    color:black
+    color: var(--color-black);
 }
-input[type='text'] {
-    outline: none;
+textarea {
+    outline: 0;
     font-size: 14px;
+    resize: none;
+    overflow: auto;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: var(--color-black);
     font-weight: bold;
 }
 .text-gray {
-    color: #8E8E8E;
+    color: var(--color-graytext);
 }
 .m-vertical-sm {
     margin: 8px 0;
@@ -29,17 +40,17 @@ a{
     border-radius: 50%;
 }
 .card {
-    background-color: #FFFFFF;
-    border: 1px solid #DBDBDB;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray);
     border-radius: 3px;
 }
 .header{
     position: fixed;
     width: 100%;
     display: flex;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     height: 53px;
-    border: 1px solid #DBDBDB;
+    border: 1px solid var(--color-gray);
     border-left: 0;
     border-right: 0;
     border-top: 0;
@@ -78,8 +89,8 @@ a{
 }
 
 .explorer-input{
-    background-color: #FAFAFA;
-    border: 1px solid #DBDBDB;
+    background-color: var(--color-graylight);
+    border: 1px solid var(--color-gray);
     width: 199px;
     height: 12px;
     border-radius: 3px;
@@ -144,30 +155,33 @@ a{
 }
 
 .publication-form-comment{
-    border-top: 1px solid #EFEFEF;
-    height: 56px;
+    border-top: 1px solid var(--color-gray);
     display: flex;
     align-items: center;
     padding-left: 16px;
     margin-top: 4px;
+    min-height: 56px;
 }
 
-.publication-form-comment input, button{
+.publication-form-comment textarea, button{
     border: 0;
     background-color: transparent;
 }
-.publication-form-comment input{
+.publication-form-comment textarea{
     width: 100%;
+    max-height: 80px;
 }
 .publication-form-comment button{
-    color: #C2DBFB;
+    color: var(--color-celest);
     font-weight: bold;
+    padding-right: 10px;
 }
 .container-right{
     position: sticky;
     top: 85px;
+    bottom: 1px;
     width: 293px;
-    height: 530px;
+    height: 666px;
     font-weight: bold;
 }
 .profile-information {
@@ -225,7 +239,7 @@ a{
 .stories-content p, .friend p{
     margin: 0;
     font-weight: 100;
-    color: black;
+    color: var(--color-black);
     margin-left: 14px;
     font-size: 10px;
 }
@@ -258,7 +272,7 @@ a{
 }
 
 .friend button{
-    color: #0095F6;
+    color: var(--color-bluelight);
     font-weight: bold;
 }
 
