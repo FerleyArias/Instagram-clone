@@ -4,6 +4,7 @@
     --color-graylight: #FAFAFA;
     --color-graytext: #8E8E8E;
     --color-bluelight: #0095F6;
+    --color-bluedark: #00376b;
     --color-celest: #C2DBFB;
     --color-black: #000;
 }
@@ -29,6 +30,9 @@ a{
     text-decoration: none;
     color: var(--color-black);
     font-weight: bold;
+}
+.mobile{
+    display: none;
 }
 .text-gray {
     color: var(--color-graytext);
@@ -58,13 +62,16 @@ a{
     align-items: center;
     z-index: 1;
 }
-.header ul{
+.header .navigator{
+    justify-self: flex-end;
+}
+.header .navigator-list{
     display: flex;
     flex-direction: row;
     width: 198px;
     justify-content: space-between;
 }
-.header ul li{
+.header .navigator-list-item{
     display: inherit;
     align-items: center;
     justify-content: center;
@@ -74,7 +81,7 @@ a{
     height: 28px;
     width: 28px;
 }
-.header li a{
+.header .navigator-list-item a{
     display: inherit;
     align-items: inherit;
     justify-content: inherit;
@@ -206,18 +213,17 @@ a{
 }
 
 .stories {
-    height: 223px;
     overflow: hidden;
 }
 
-.stories-header, .friends-header{
+.friends-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 4px 16px;
     margin-top: 12px;
 }
-.stories-header a, .friends-header a{
+.friends-header a{
     font-size: 12px;
 }
 
@@ -255,7 +261,7 @@ a{
     height: 32px;
     display: flex;
     justify-content: space-between;
-    padding: 8px 8px;
+    padding: 8px 0px;
 }
 .friend-left{
     display: flex;
@@ -283,6 +289,9 @@ a{
     align-items: inherit;
     justify-content: inherit;
 }
+.subcontainer{
+    width: 100%;
+}
 .footer, .footer a{
     font-weight: 100;
     font-size: 11px;
@@ -290,5 +299,8 @@ a{
 }
 
 .footer{
-    padding-right: 70px;
+    padding-right: 25px;
+}
+.footer-nav{
+    margin-bottom: 20px;
 }
