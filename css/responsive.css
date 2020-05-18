@@ -2,7 +2,7 @@
     .container-right{
         display: none;
     }
-    .principal-section .subcontainer{
+    .principal-section .container{
         justify-content: center;
     }
     .pc{
