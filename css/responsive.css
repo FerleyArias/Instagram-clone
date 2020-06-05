@@ -24,23 +24,32 @@
     }
     .footer{
         text-transform: uppercase;
-        margin: 38px 0;
-        margin-left: 20px;
+        padding: 38px 20px;
         color: var(--color-graytext);
         font-weight: bold;
         font-size: 12px;
-    }
-
-
-}
-@media (max-width: 875px){
-    .footer{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        max-width: 1012px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+@media (max-width: 875px) {
+    .footer{
+        text-align: center;
     }
     .footer-nav{
-        width: 376px;
         justify-content: center;
+        margin: 0 auto;
+        max-width: 360px;
+        width: 100%;
+    }
+}
+
+}
+@media (max-width: 500px){
+    .explorer-input{
+        display: none;
     }
 }

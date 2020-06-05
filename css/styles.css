@@ -31,6 +31,13 @@ a{
     color: var(--color-black);
     font-weight: bold;
 }
+button{
+    border: 0;
+    background-color: transparent;
+}
+button:focus{
+    outline: none;
+}
 .mobile{
     display: none;
 }
@@ -40,8 +47,18 @@ a{
 .m-vertical-sm {
     margin: 8px 0;
 }
+.borde-degradado{
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(45deg, #fff, #fff), linear-gradient(45deg, #FA9E4C, #C85090 );  
+}
+.borde-gris{
+    border: 2px solid var(--color-gray);
+}
 .circular {
     border-radius: 50%;
+    overflow: hidden;
 }
 .card {
     background-color: var(--color-white);
@@ -59,6 +76,7 @@ a{
     border-right: 0;
     border-top: 0;
     justify-content: space-between; 
+    flex-shrink: 0;
     align-items: center;
     z-index: 1;
 }
@@ -111,7 +129,8 @@ a{
 }
 .news{
     margin-top: 83px;
-    width: 614px;
+    max-width: 614px;
+    width: 100%;
 }
 .publication{
     margin-bottom: 60px;
@@ -139,8 +158,24 @@ a{
     width: 32px;
     height: 32px;
 }
-.publication-content img, video{
+.publication-content{
+    position: relative;
+}
+.publication-content_source{
     width: 100%;
+}
+.publication-content_button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    cursor: pointer;
+}
+.publication-content_button i{
+    color: white;
+    font-size: 60px;
 }
 
 .publication-footer-icons{
@@ -161,7 +196,7 @@ a{
     font-size: 10px;
 }
 
-.publication-form-comment{
+.publication-form{
     border-top: 1px solid var(--color-gray);
     display: flex;
     align-items: center;
@@ -170,15 +205,15 @@ a{
     min-height: 56px;
 }
 
-.publication-form-comment textarea, button{
+.publication-form_textarea{
     border: 0;
     background-color: transparent;
 }
-.publication-form-comment textarea{
+.publication-form_textarea{
     width: 100%;
     max-height: 80px;
 }
-.publication-form-comment button{
+.publication_form_button{
     color: var(--color-celest);
     font-weight: bold;
     padding-right: 10px;
@@ -202,6 +237,7 @@ a{
 .profile-information img{
     width: 50px; 
     height: 50px;
+    padding: 3px;
 }
 .profile-information p{
     font-size: 12px;
@@ -215,7 +251,13 @@ a{
 .stories {
     overflow-x: auto;
     margin-bottom: 24px;
-    overflow-x: auto;
+}
+.stories::-webkit-scrollbar{
+    display: none;
+}
+.irelevant-text{
+    font-weight: 100;
+    font-size: 12px;
 }
 
 .friends-header{
@@ -256,10 +298,15 @@ a{
     text-overflow: ellipsis;
 
 }
-.stories-content img{
+.stories-content div{
     width: 62px;
     height: 62px;
-    border: 1px solid var(--color-gray);
+    box-sizing: border-box;
+    padding: 3px;
+}
+.stories-content img{
+    height: 100%;
+    width: 100%;
 }
 .storie{
     padding: 0 4px;
@@ -304,6 +351,68 @@ a{
 .friend button{
     color: var(--color-bluelight);
     font-weight: bold;
+}
+
+.friends-news{
+    padding: 20px 0;
+}
+
+.friends-news-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px;
+    margin-bottom: 12px;
+}
+.friends-more{
+    color: var(--color-bluelight);
+}
+.friends-news-content{
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+    list-style: none;
+    overflow: auto;
+}
+.friends-news-content::-webkit-scrollbar{
+    display: none
+}
+.friend-news{
+    position: relative;
+    padding: 20px;
+    width: 174px;
+    height: 206px;
+    box-sizing: border-box;
+    display: grid;
+    justify-items: center;
+    align-content: space-between;
+    text-align: center;
+}
+
+.delete-friend{
+    position: absolute;
+    right:0;
+    top: 0;
+    padding: 12px;
+    font-size: 15px;
+}
+.delete-friend i{
+    color: #D6D6D6;
+}
+
+.friend_img{
+    width: 54px;
+    height: 54px;
+}
+
+.friend-news_button--follow{
+    background-color: var(--color-bluelight);
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 0;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .container{
