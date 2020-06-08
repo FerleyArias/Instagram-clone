@@ -47,6 +47,12 @@
     }
 }
 
+@media(max-width: 610px) {
+    .friends-news-content{
+        grid-column-gap: 5px;
+    }
+}
+
 }
 @media (max-width: 500px){
     .explorer-input{
