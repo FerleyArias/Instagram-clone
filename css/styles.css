@@ -109,7 +109,7 @@ button:focus{
     display: flex;
     align-items: flex-end;
     height: 36px;
-    width: 220px;
+    width: auto;
     margin-left: 10px;
 }
 
@@ -355,6 +355,7 @@ button:focus{
 
 .friends-news{
     padding: 20px 0;
+    margin-bottom: 60px;
 }
 
 .friends-news-header{
@@ -408,6 +409,18 @@ button:focus{
     background-color: var(--color-bluelight);
     width: 100%;
     color: white;
+    border-radius: 5px;
+    padding: 5px 0;
+    height: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+.friend-news_button--unfollow {
+    width: 100%;
+    color: black;
+    border: 1px solid #ebebeb;
+    font-weight: 600;
     border-radius: 5px;
     padding: 5px 0;
     height: 30px;

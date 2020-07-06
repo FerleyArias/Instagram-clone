@@ -46,6 +46,14 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 735px) {
+    .friend-news, .publication {
+        margin-bottom: 15px;
+    }
+    .publication-form{
+        display: none;
+    }
+}
 
 @media(max-width: 610px) {
     .friends-news-content{
@@ -57,5 +65,9 @@
 @media (max-width: 500px){
     .explorer-input{
         display: none;
+    }
+    .publication {
+        background-color: transparent;
+        border: 0;
     }
 }
